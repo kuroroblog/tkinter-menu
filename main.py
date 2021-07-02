@@ -9,10 +9,10 @@ class Application(tk.Frame):
         # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200")
 
-        # 2. menubarを作成して、Window内のmenubarとする。
+        # 2. menubarを作成して、menubarをWindow内のmenubarとする。
         # Menuを作成する。menuBarとする。
         menuBar = tk.Menu()
-        # Windowのmenubarへ、先ほど作成したmenubarを追加する。
+        # Window内のmenubarを、先ほど作成したmenuBarとする。
         self.master.config(menu=menuBar)
 
         # 3. サブメニューを作成する。
