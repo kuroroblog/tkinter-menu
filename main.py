@@ -9,11 +9,10 @@ class Application(tk.Frame):
         # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200")
 
-        # 2. メニューバーを作成して、Window内のメニューバーとする。
-        # メニューバーとは? : https://www.724685.com/word/wd150128.htm#:~:text=%E3%80%8C%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC%E3%80%8D%E3%81%A8%E3%81%AF%E3%80%81,%E6%93%8D%E4%BD%9C%E9%A0%98%E5%9F%9F%EF%BC%88%E3%83%90%E3%83%BC%EF%BC%89%E3%81%A7%E3%81%99%E3%80%82
+        # 2. menubarを作成して、Window内のmenubarとする。
         # Menuを作成する。menuBarとする。
         menuBar = tk.Menu()
-        # Windowのメニューバーへ、先ほど作成したメニューバーを追加する。
+        # Windowのmenubarへ、先ほど作成したmenubarを追加する。
         self.master.config(menu=menuBar)
 
         # 3. サブメニューを作成する。
@@ -24,7 +23,7 @@ class Application(tk.Frame):
         # command : サブメニューが選択された場合に、実行する関数を設定。self.onExitとする。
         fileMenu.add_command(label="Exit", command=self.onExit)
 
-        # 4. 2.で作成したメニューバーへ、Fileと名付けられたメインメニューを追加する。そしてFileと名付けられたメインメニュー内に、3で作成したサブメニューを追加する。
+        # 4. 2.で作成したmenubarへ、Fileと名付けられたメインメニューを追加する。そしてFileと名付けられたメインメニュー内に、3で作成したサブメニューを追加する。
         # メインメニューとは? : https://kotobank.jp/word/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC-9213
         # label : メインメニュー名の設定
         # menu : メインメニュー内に含む、サブメニュー
